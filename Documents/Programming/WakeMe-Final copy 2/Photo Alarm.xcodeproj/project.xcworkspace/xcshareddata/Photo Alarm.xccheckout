@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B630D022-ECFD-4688-8FA5-F83DDC90ADE8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Photo Alarm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0F3CEAE926163009F83913808BE7BBF05C84239</key>
+		<string>https://bitbucket.org/KashishGoel/wakem.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Photo Alarm.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0F3CEAE926163009F83913808BE7BBF05C84239</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/KashishGoel/wakem.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0F3CEAE926163009F83913808BE7BBF05C84239</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0F3CEAE926163009F83913808BE7BBF05C84239</string>
+			<key>IDESourceControlWCCName</key>
+			<string>main</string>
+		</dict>
+	</array>
+</dict>
+</plist>

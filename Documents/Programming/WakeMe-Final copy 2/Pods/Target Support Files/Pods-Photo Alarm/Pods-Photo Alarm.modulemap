@@ -1,0 +1,6 @@
+framework module Pods_Photo_Alarm {
+  umbrella header "Pods-Photo Alarm-umbrella.h"
+
+  export *
+  module * { export * }
+}

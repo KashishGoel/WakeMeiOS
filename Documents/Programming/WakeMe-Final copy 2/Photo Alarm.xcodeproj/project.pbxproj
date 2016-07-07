@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363342751B8418070027DF49 /* Photo_Alarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 363342731B8418070027DF49 /* Photo_Alarm.xcdatamodeld */; };
+		363342771B8418070027DF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363342761B8418070027DF49 /* ViewController.swift */; };
+		3633427C1B8418070027DF49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3633427B1B8418070027DF49 /* Images.xcassets */; };
+		3633427F1B8418070027DF49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3633427D1B8418070027DF49 /* LaunchScreen.xib */; };
+		3633428B1B8418070027DF49 /* Photo_AlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3633428A1B8418070027DF49 /* Photo_AlarmTests.swift */; };
+		363342A31B8419B00027DF49 /* AddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363342A21B8419B00027DF49 /* AddAlarm.swift */; };
+		363342A51B8419C00027DF49 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363342A41B8419C00027DF49 /* SettingsViewController.swift */; };
+		363342A71B8419CB0027DF49 /* AlarmOffScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363342A61B8419CB0027DF49 /* AlarmOffScreen.swift */; };
+		363342B41B850CFF0027DF49 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363342B31B850CFF0027DF49 /* MediaPlayer.framework */; };
+		363342B61B850D070027DF49 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363342B51B850D070027DF49 /* AVFoundation.framework */; };
+		363342B81B850D0C0027DF49 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363342B71B850D0C0027DF49 /* AVKit.framework */; };
+		363342BA1B854C680027DF49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363342B91B854C680027DF49 /* CoreLocation.framework */; };
+		3638DE531B91091D00F3F4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638DE521B91091D00F3F4D9 /* AppDelegate.swift */; };
+		3638FBB91B9A350400513718 /* SwiftWeatherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3638FBB81B9A350400513718 /* SwiftWeatherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3638FBBF1B9A350400513718 /* SwiftWeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638FBB41B9A350400513718 /* SwiftWeatherService.framework */; };
+		3638FBC81B9A350400513718 /* SwiftWeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638FBC71B9A350400513718 /* SwiftWeatherServiceTests.swift */; };
+		3638FBCB1B9A350400513718 /* SwiftWeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638FBB41B9A350400513718 /* SwiftWeatherService.framework */; };
+		3638FBCD1B9A350400513718 /* SwiftWeatherService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3638FBB41B9A350400513718 /* SwiftWeatherService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3638FBD91B9A399700513718 /* background_summer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3638FBD71B9A399700513718 /* background_summer.png */; };
+		3638FBE21B9A4A4800513718 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3638FBE11B9A4A4800513718 /* MapKit.framework */; };
+		3638FBEA1B9A4B1D00513718 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638FBE91B9A4B1D00513718 /* WeatherService.swift */; };
+		36461A361B912ABC006CE89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36461A351B912ABC006CE89B /* Main.storyboard */; };
+		368FE13B1D19DB3D0090DF87 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36304FB61D19C87000E526F3 /* SwiftyJSON.framework */; };
+		368FE1A01D19DDB80090DF87 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36304FB61D19C87000E526F3 /* SwiftyJSON.framework */; };
+		368FE1A11D19DF470090DF87 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36304FBB1D19CA4700E526F3 /* Alamofire.framework */; };
+		368FE1A21D19DF510090DF87 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36304FBB1D19CA4700E526F3 /* Alamofire.framework */; };
+		369818051D28AB3C00B0231F /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 369818041D28AB3C00B0231F /* StyleKit.m */; };
+		369818071D28AB4900B0231F /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369818061D28AB4900B0231F /* Onboarding.swift */; };
+		36A09B311B9AAC7200A0B9AC /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A09B301B9AAC7200A0B9AC /* HowToViewController.swift */; };
+		36FB195B1C8A8D0900F548E7 /* background12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36FB19561C8A8D0900F548E7 /* background12.jpg */; };
+		36FB195C1C8A8D0900F548E7 /* alarmSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 36FB19571C8A8D0900F548E7 /* alarmSound.m4a */; };
+		36FB195D1C8A8D0900F548E7 /* background11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36FB19581C8A8D0900F548E7 /* background11.jpg */; };
+		36FB195F1C8A8D0900F548E7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FB195A1C8A8D0900F548E7 /* background.png */; };
+		36FB4BF61B8BEE3F001C955F /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36FB4BF51B8BEE3F001C955F /* music.mp3 */; };
+		36FB4BF71B8BEE3F001C955F /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36FB4BF51B8BEE3F001C955F /* music.mp3 */; };
+		49B0F32D6BE494135E22ED0A /* Pods_Photo_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B914D273897BF5778E5DCF8 /* Pods_Photo_Alarm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		363342851B8418070027DF49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363342641B8418070027DF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3633426B1B8418070027DF49;
+			remoteInfo = "Photo Alarm";
+		};
+		3638FBC01B9A350400513718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363342641B8418070027DF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3638FBB31B9A350400513718;
+			remoteInfo = SwiftWeatherService;
+		};
+		3638FBC21B9A350400513718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363342641B8418070027DF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3633426B1B8418070027DF49;
+			remoteInfo = "Photo Alarm";
+		};
+		3638FBC91B9A350400513718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363342641B8418070027DF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3638FBB31B9A350400513718;
+			remoteInfo = SwiftWeatherService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3638FBCC1B9A350400513718 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3638FBCD1B9A350400513718 /* SwiftWeatherService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		36304FB61D19C87000E526F3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/Photo_Alarm-eizxafnjncjaiacphxucsiolnlip/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		36304FB91D19C8BE00E526F3 /* Pods_Photo_Alarm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Photo_Alarm.framework; path = "../../../Library/Developer/Xcode/DerivedData/Photo_Alarm-eizxafnjncjaiacphxucsiolnlip/Build/Products/Debug-iphonesimulator/Pods_Photo_Alarm.framework"; sourceTree = "<group>"; };
+		36304FBB1D19CA4700E526F3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Photo_Alarm-eizxafnjncjaiacphxucsiolnlip/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		3633426C1B8418070027DF49 /* Photo Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		363342701B8418070027DF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363342741B8418070027DF49 /* Photo_Alarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photo_Alarm.xcdatamodel; sourceTree = "<group>"; };
+		363342761B8418070027DF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3633427B1B8418070027DF49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3633427E1B8418070027DF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		363342841B8418070027DF49 /* Photo AlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo AlarmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		363342891B8418070027DF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3633428A1B8418070027DF49 /* Photo_AlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_AlarmTests.swift; sourceTree = "<group>"; };
+		363342A21B8419B00027DF49 /* AddAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarm.swift; sourceTree = "<group>"; };
+		363342A41B8419C00027DF49 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		363342A61B8419CB0027DF49 /* AlarmOffScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmOffScreen.swift; sourceTree = "<group>"; };
+		363342B31B850CFF0027DF49 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		363342B51B850D070027DF49 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		363342B71B850D0C0027DF49 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		363342B91B854C680027DF49 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3638DE521B91091D00F3F4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3638FBB41B9A350400513718 /* SwiftWeatherService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWeatherService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3638FBB71B9A350400513718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3638FBB81B9A350400513718 /* SwiftWeatherService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftWeatherService.h; sourceTree = "<group>"; };
+		3638FBBE1B9A350400513718 /* SwiftWeatherServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWeatherServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3638FBC61B9A350400513718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3638FBC71B9A350400513718 /* SwiftWeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWeatherServiceTests.swift; sourceTree = "<group>"; };
+		3638FBD71B9A399700513718 /* background_summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_summer.png; sourceTree = "<group>"; };
+		3638FBD81B9A399700513718 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3638FBE11B9A4A4800513718 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3638FBE91B9A4B1D00513718 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		36461A351B912ABC006CE89B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3657B9841BBB891E006D9709 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		3657B9861BBB892E006D9709 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		369818021D28AB3B00B0231F /* Photo Alarm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photo Alarm-Bridging-Header.h"; sourceTree = "<group>"; };
+		369818031D28AB3C00B0231F /* StyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleKit.h; sourceTree = "<group>"; };
+		369818041D28AB3C00B0231F /* StyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleKit.m; sourceTree = "<group>"; };
+		369818061D28AB4900B0231F /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		36A09B301B9AAC7200A0B9AC /* HowToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
+		36CBE2D81B8928920079D5B1 /* alarmSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound.m4a; sourceTree = "<group>"; };
+		36FB19561C8A8D0900F548E7 /* background12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background12.jpg; sourceTree = "<group>"; };
+		36FB19571C8A8D0900F548E7 /* alarmSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarmSound.m4a; sourceTree = "<group>"; };
+		36FB19581C8A8D0900F548E7 /* background11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background11.jpg; sourceTree = "<group>"; };
+		36FB19591C8A8D0900F548E7 /* background_summer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_summer.png; sourceTree = "<group>"; };
+		36FB195A1C8A8D0900F548E7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		36FB19601C8A8D2A00F548E7 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		36FB4BF51B8BEE3F001C955F /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		69B835A02DFCC11316B8C1E8 /* Pods-Photo Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Alarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Alarm/Pods-Photo Alarm.release.xcconfig"; sourceTree = "<group>"; };
+		6B914D273897BF5778E5DCF8 /* Pods_Photo_Alarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Alarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A62407CB9C11E7F62AD319 /* Pods-Photo Alarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Alarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Alarm/Pods-Photo Alarm.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CD91DD5CE1B137435AA995 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363342691B8418070027DF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368FE1A11D19DF470090DF87 /* Alamofire.framework in Frameworks */,
+				368FE13B1D19DB3D0090DF87 /* SwiftyJSON.framework in Frameworks */,
+				3638FBE21B9A4A4800513718 /* MapKit.framework in Frameworks */,
+				363342BA1B854C680027DF49 /* CoreLocation.framework in Frameworks */,
+				363342B81B850D0C0027DF49 /* AVKit.framework in Frameworks */,
+				363342B61B850D070027DF49 /* AVFoundation.framework in Frameworks */,
+				363342B41B850CFF0027DF49 /* MediaPlayer.framework in Frameworks */,
+				3638FBCB1B9A350400513718 /* SwiftWeatherService.framework in Frameworks */,
+				49B0F32D6BE494135E22ED0A /* Pods_Photo_Alarm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363342811B8418070027DF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3638FBB01B9A350400513718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368FE1A21D19DF510090DF87 /* Alamofire.framework in Frameworks */,
+				368FE1A01D19DDB80090DF87 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3638FBBB1B9A350400513718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638FBBF1B9A350400513718 /* SwiftWeatherService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363342631B8418070027DF49 = {
+			isa = PBXGroup;
+			children = (
+				3633426E1B8418070027DF49 /* Photo Alarm */,
+				363342871B8418070027DF49 /* Photo AlarmTests */,
+				3638FBB51B9A350400513718 /* SwiftWeatherService */,
+				3638FBC41B9A350400513718 /* SwiftWeatherServiceTests */,
+				3633426D1B8418070027DF49 /* Products */,
+				7E5C54FF63C697A669379ADF /* Frameworks */,
+				B9F11B2027C89E2E7A38C984 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3633426D1B8418070027DF49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3633426C1B8418070027DF49 /* Photo Alarm.app */,
+				363342841B8418070027DF49 /* Photo AlarmTests.xctest */,
+				3638FBB41B9A350400513718 /* SwiftWeatherService.framework */,
+				3638FBBE1B9A350400513718 /* SwiftWeatherServiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3633426E1B8418070027DF49 /* Photo Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				36461A351B912ABC006CE89B /* Main.storyboard */,
+				3633429D1B84194F0027DF49 /* Models */,
+				363342AC1B841A140027DF49 /* VC's */,
+				3638DE521B91091D00F3F4D9 /* AppDelegate.swift */,
+				3633426F1B8418070027DF49 /* Supporting Files */,
+			);
+			path = "Photo Alarm";
+			sourceTree = "<group>";
+		};
+		3633426F1B8418070027DF49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3638FBD71B9A399700513718 /* background_summer.png */,
+				3638FBD81B9A399700513718 /* background.png */,
+				36FB19561C8A8D0900F548E7 /* background12.jpg */,
+				36FB19571C8A8D0900F548E7 /* alarmSound.m4a */,
+				36FB19581C8A8D0900F548E7 /* background11.jpg */,
+				36FB19591C8A8D0900F548E7 /* background_summer.png */,
+				36FB195A1C8A8D0900F548E7 /* background.png */,
+				36CBE2D81B8928920079D5B1 /* alarmSound.m4a */,
+				36FB19601C8A8D2A00F548E7 /* music.mp3 */,
+				36FB4BF51B8BEE3F001C955F /* music.mp3 */,
+				3633427D1B8418070027DF49 /* LaunchScreen.xib */,
+				3633427B1B8418070027DF49 /* Images.xcassets */,
+				363342701B8418070027DF49 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		363342871B8418070027DF49 /* Photo AlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				3633428A1B8418070027DF49 /* Photo_AlarmTests.swift */,
+				363342881B8418070027DF49 /* Supporting Files */,
+			);
+			path = "Photo AlarmTests";
+			sourceTree = "<group>";
+		};
+		363342881B8418070027DF49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				363342891B8418070027DF49 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3633429D1B84194F0027DF49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				363342731B8418070027DF49 /* Photo_Alarm.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		363342AC1B841A140027DF49 /* VC's */ = {
+			isa = PBXGroup;
+			children = (
+				363342A21B8419B00027DF49 /* AddAlarm.swift */,
+				363342A61B8419CB0027DF49 /* AlarmOffScreen.swift */,
+				363342A41B8419C00027DF49 /* SettingsViewController.swift */,
+				36A09B301B9AAC7200A0B9AC /* HowToViewController.swift */,
+				363342761B8418070027DF49 /* ViewController.swift */,
+				369818061D28AB4900B0231F /* Onboarding.swift */,
+				369818031D28AB3C00B0231F /* StyleKit.h */,
+				369818041D28AB3C00B0231F /* StyleKit.m */,
+				369818021D28AB3B00B0231F /* Photo Alarm-Bridging-Header.h */,
+			);
+			name = "VC's";
+			sourceTree = "<group>";
+		};
+		3638FBB51B9A350400513718 /* SwiftWeatherService */ = {
+			isa = PBXGroup;
+			children = (
+				3638FBB81B9A350400513718 /* SwiftWeatherService.h */,
+				3638FBE91B9A4B1D00513718 /* WeatherService.swift */,
+				3638FBB61B9A350400513718 /* Supporting Files */,
+			);
+			path = SwiftWeatherService;
+			sourceTree = "<group>";
+		};
+		3638FBB61B9A350400513718 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3638FBB71B9A350400513718 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3638FBC41B9A350400513718 /* SwiftWeatherServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				3638FBC71B9A350400513718 /* SwiftWeatherServiceTests.swift */,
+				3638FBC51B9A350400513718 /* Supporting Files */,
+			);
+			path = SwiftWeatherServiceTests;
+			sourceTree = "<group>";
+		};
+		3638FBC51B9A350400513718 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3638FBC61B9A350400513718 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E5C54FF63C697A669379ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36304FBB1D19CA4700E526F3 /* Alamofire.framework */,
+				36304FB91D19C8BE00E526F3 /* Pods_Photo_Alarm.framework */,
+				36304FB61D19C87000E526F3 /* SwiftyJSON.framework */,
+				3657B9861BBB892E006D9709 /* Alamofire.framework */,
+				3657B9841BBB891E006D9709 /* Alamofire.framework */,
+				3638FBE11B9A4A4800513718 /* MapKit.framework */,
+				363342B91B854C680027DF49 /* CoreLocation.framework */,
+				363342B71B850D0C0027DF49 /* AVKit.framework */,
+				363342B51B850D070027DF49 /* AVFoundation.framework */,
+				363342B31B850CFF0027DF49 /* MediaPlayer.framework */,
+				E9CD91DD5CE1B137435AA995 /* Pods.framework */,
+				6B914D273897BF5778E5DCF8 /* Pods_Photo_Alarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9F11B2027C89E2E7A38C984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6A62407CB9C11E7F62AD319 /* Pods-Photo Alarm.debug.xcconfig */,
+				69B835A02DFCC11316B8C1E8 /* Pods-Photo Alarm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3638FBB11B9A350400513718 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638FBB91B9A350400513718 /* SwiftWeatherService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3633426B1B8418070027DF49 /* Photo Alarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3633428E1B8418070027DF49 /* Build configuration list for PBXNativeTarget "Photo Alarm" */;
+			buildPhases = (
+				8248E9627892EEBC01B80BCC /* [CP] Check Pods Manifest.lock */,
+				363342681B8418070027DF49 /* Sources */,
+				363342691B8418070027DF49 /* Frameworks */,
+				3633426A1B8418070027DF49 /* Resources */,
+				3638FBCC1B9A350400513718 /* Embed Frameworks */,
+				DBD41CFD2508B00979744868 /* [CP] Embed Pods Frameworks */,
+				AB23CF3AFCBCEB7142538E7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3638FBCA1B9A350400513718 /* PBXTargetDependency */,
+			);
+			name = "Photo Alarm";
+			productName = "Photo Alarm";
+			productReference = 3633426C1B8418070027DF49 /* Photo Alarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		363342831B8418070027DF49 /* Photo AlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363342911B8418070027DF49 /* Build configuration list for PBXNativeTarget "Photo AlarmTests" */;
+			buildPhases = (
+				363342801B8418070027DF49 /* Sources */,
+				363342811B8418070027DF49 /* Frameworks */,
+				363342821B8418070027DF49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				363342861B8418070027DF49 /* PBXTargetDependency */,
+			);
+			name = "Photo AlarmTests";
+			productName = "Photo AlarmTests";
+			productReference = 363342841B8418070027DF49 /* Photo AlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3638FBB31B9A350400513718 /* SwiftWeatherService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3638FBCE1B9A350400513718 /* Build configuration list for PBXNativeTarget "SwiftWeatherService" */;
+			buildPhases = (
+				3638FBAF1B9A350400513718 /* Sources */,
+				3638FBB01B9A350400513718 /* Frameworks */,
+				3638FBB11B9A350400513718 /* Headers */,
+				3638FBB21B9A350400513718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftWeatherService;
+			productName = SwiftWeatherService;
+			productReference = 3638FBB41B9A350400513718 /* SwiftWeatherService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3638FBBD1B9A350400513718 /* SwiftWeatherServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3638FBD11B9A350400513718 /* Build configuration list for PBXNativeTarget "SwiftWeatherServiceTests" */;
+			buildPhases = (
+				3638FBBA1B9A350400513718 /* Sources */,
+				3638FBBB1B9A350400513718 /* Frameworks */,
+				3638FBBC1B9A350400513718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3638FBC11B9A350400513718 /* PBXTargetDependency */,
+				3638FBC31B9A350400513718 /* PBXTargetDependency */,
+			);
+			name = SwiftWeatherServiceTests;
+			productName = SwiftWeatherServiceTests;
+			productReference = 3638FBBE1B9A350400513718 /* SwiftWeatherServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		363342641B8418070027DF49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kashish Goel";
+				TargetAttributes = {
+					3633426B1B8418070027DF49 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 484ZN3HKPE;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					363342831B8418070027DF49 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3633426B1B8418070027DF49;
+					};
+					3638FBB31B9A350400513718 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3638FBBD1B9A350400513718 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3633426B1B8418070027DF49;
+					};
+				};
+			};
+			buildConfigurationList = 363342671B8418070027DF49 /* Build configuration list for PBXProject "Photo Alarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 363342631B8418070027DF49;
+			productRefGroup = 3633426D1B8418070027DF49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3633426B1B8418070027DF49 /* Photo Alarm */,
+				363342831B8418070027DF49 /* Photo AlarmTests */,
+				3638FBB31B9A350400513718 /* SwiftWeatherService */,
+				3638FBBD1B9A350400513718 /* SwiftWeatherServiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3633426A1B8418070027DF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FB4BF61B8BEE3F001C955F /* music.mp3 in Resources */,
+				36FB195F1C8A8D0900F548E7 /* background.png in Resources */,
+				3633427F1B8418070027DF49 /* LaunchScreen.xib in Resources */,
+				36FB195B1C8A8D0900F548E7 /* background12.jpg in Resources */,
+				36FB195D1C8A8D0900F548E7 /* background11.jpg in Resources */,
+				3638FBD91B9A399700513718 /* background_summer.png in Resources */,
+				36461A361B912ABC006CE89B /* Main.storyboard in Resources */,
+				36FB195C1C8A8D0900F548E7 /* alarmSound.m4a in Resources */,
+				3633427C1B8418070027DF49 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363342821B8418070027DF49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FB4BF71B8BEE3F001C955F /* music.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3638FBB21B9A350400513718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3638FBBC1B9A350400513718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8248E9627892EEBC01B80BCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB23CF3AFCBCEB7142538E7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo Alarm/Pods-Photo Alarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD41CFD2508B00979744868 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo Alarm/Pods-Photo Alarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363342681B8418070027DF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369818071D28AB4900B0231F /* Onboarding.swift in Sources */,
+				3638DE531B91091D00F3F4D9 /* AppDelegate.swift in Sources */,
+				363342771B8418070027DF49 /* ViewController.swift in Sources */,
+				363342A51B8419C00027DF49 /* SettingsViewController.swift in Sources */,
+				363342751B8418070027DF49 /* Photo_Alarm.xcdatamodeld in Sources */,
+				363342A31B8419B00027DF49 /* AddAlarm.swift in Sources */,
+				363342A71B8419CB0027DF49 /* AlarmOffScreen.swift in Sources */,
+				369818051D28AB3C00B0231F /* StyleKit.m in Sources */,
+				36A09B311B9AAC7200A0B9AC /* HowToViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363342801B8418070027DF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3633428B1B8418070027DF49 /* Photo_AlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3638FBAF1B9A350400513718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638FBEA1B9A4B1D00513718 /* WeatherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3638FBBA1B9A350400513718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3638FBC81B9A350400513718 /* SwiftWeatherServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		363342861B8418070027DF49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3633426B1B8418070027DF49 /* Photo Alarm */;
+			targetProxy = 363342851B8418070027DF49 /* PBXContainerItemProxy */;
+		};
+		3638FBC11B9A350400513718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3638FBB31B9A350400513718 /* SwiftWeatherService */;
+			targetProxy = 3638FBC01B9A350400513718 /* PBXContainerItemProxy */;
+		};
+		3638FBC31B9A350400513718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3633426B1B8418070027DF49 /* Photo Alarm */;
+			targetProxy = 3638FBC21B9A350400513718 /* PBXContainerItemProxy */;
+		};
+		3638FBCA1B9A350400513718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3638FBB31B9A350400513718 /* SwiftWeatherService */;
+			targetProxy = 3638FBC91B9A350400513718 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3633427D1B8418070027DF49 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3633427E1B8418070027DF49 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3633428C1B8418070027DF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3633428D1B8418070027DF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3633428F1B8418070027DF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A62407CB9C11E7F62AD319 /* Pods-Photo Alarm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Photo Alarm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Photo Alarm/Photo Alarm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		363342901B8418070027DF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B835A02DFCC11316B8C1E8 /* Pods-Photo Alarm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Photo Alarm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Photo Alarm/Photo Alarm-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		363342921B8418070027DF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Photo AlarmTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Alarm.app/Photo Alarm";
+			};
+			name = Debug;
+		};
+		363342931B8418070027DF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Photo AlarmTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Alarm.app/Photo Alarm";
+			};
+			name = Release;
+		};
+		3638FBCF1B9A350400513718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6A62407CB9C11E7F62AD319 /* Pods-Photo Alarm.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftWeatherService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3638FBD01B9A350400513718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B835A02DFCC11316B8C1E8 /* Pods-Photo Alarm.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SwiftWeatherService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3638FBD21B9A350400513718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftWeatherServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Alarm.app/Photo Alarm";
+			};
+			name = Debug;
+		};
+		3638FBD31B9A350400513718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftWeatherServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KashishGoel.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Alarm.app/Photo Alarm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363342671B8418070027DF49 /* Build configuration list for PBXProject "Photo Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3633428C1B8418070027DF49 /* Debug */,
+				3633428D1B8418070027DF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3633428E1B8418070027DF49 /* Build configuration list for PBXNativeTarget "Photo Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3633428F1B8418070027DF49 /* Debug */,
+				363342901B8418070027DF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363342911B8418070027DF49 /* Build configuration list for PBXNativeTarget "Photo AlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363342921B8418070027DF49 /* Debug */,
+				363342931B8418070027DF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3638FBCE1B9A350400513718 /* Build configuration list for PBXNativeTarget "SwiftWeatherService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3638FBCF1B9A350400513718 /* Debug */,
+				3638FBD01B9A350400513718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3638FBD11B9A350400513718 /* Build configuration list for PBXNativeTarget "SwiftWeatherServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3638FBD21B9A350400513718 /* Debug */,
+				3638FBD31B9A350400513718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		363342731B8418070027DF49 /* Photo_Alarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				363342741B8418070027DF49 /* Photo_Alarm.xcdatamodel */,
+			);
+			currentVersion = 363342741B8418070027DF49 /* Photo_Alarm.xcdatamodel */;
+			path = Photo_Alarm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 363342641B8418070027DF49 /* Project object */;
+}
